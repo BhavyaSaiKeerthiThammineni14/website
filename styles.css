@@ -254,32 +254,46 @@ span {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* Your existing CSS code goes here */
+/* Add animations for skill meters */
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+}
+
 .percent-bar {
-  background: var(--main-color);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  height: 100px;
+  border-radius: 50%;
+  animation: fill 2s forwards;
 }
 
 .c-bar {
-  width: 80%;
-}
-.python-bar {
-  width: 90%;
-}
-.html-bar {
-  width: 90%;
-}
-.css-bar {
-  width: 80%;
+  width: 0;
+  animation-delay: 0.2s;
 }
 
-.js-bar {
-  width: 70%;
+.Python-bar {
+  width: 0;
+  animation-delay: 0.2s;
 }
-
-.java-bar {
-  width: 90%;
+.HTML-bar {
+  width: 0;
+  animation-delay: 0.2s;
 }
-
+.CSS-bar {
+  width: 0;
+  animation-delay: 0.2s;
+}
+.JavaScript-bar {
+  width: 0;
+  animation-delay: 0.2s;
+}
+.Java-bar {
+  width: 0;
+  animation-delay: 0.2s;
+}
 .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
