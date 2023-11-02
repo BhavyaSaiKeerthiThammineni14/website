@@ -220,6 +220,12 @@ header.shadow {
   padding-left: 4rem;
   object-position: center;
 }
+.bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bars-box {
   position: relative;
   display: flex;
@@ -235,25 +241,25 @@ span {
   font-weight: 500;
 }
 
-.light-bar {
+.light-bar,
+.percent-bar {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.light-bar {
   width: 100%;
   height: 0.5rem;
-  border-radius: 50px;
   background: hsla(260, 100%, 44%, 0.4);
 }
 
 .percent-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 0.5rem;
-  border-radius: 50px;
   background: var(--main-color);
 }
-
 
 .c-bar {
   width: 80%;
