@@ -243,25 +243,22 @@ span {
 
 .light-bar,
 .percent-bar {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  overflow: hidden;
 }
 
 .light-bar {
   background: hsla(260, 100%, 44%, 0.4);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .percent-bar {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background: var(--main-color);
-  border-radius: 50%;
-  clip: rect(0, 50px, 100px, 0); /* Adjust this clip value as needed */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 .c-bar {
   width: 80%;
 }
