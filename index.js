@@ -2,7 +2,7 @@ let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 let typed = new Typed("#typing",{
-    strings:["Front-End Developer","Freelancer","Entrepreneur"],
+    strings:["CS Undergrad","Tech Enthusiast","Front-end Developer","Prompt Engineer","Freelancer"],
     typeSpeed:10,
     backspeed:10,
     loop:true
