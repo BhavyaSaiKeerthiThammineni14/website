@@ -31,3 +31,10 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
+// Your existing JavaScript code goes here
+// Update skill meter animation
+const bars = document.querySelectorAll('.percent-bar');
+bars.forEach(bar => {
+    const width = bar.parentNode.querySelector('span').textContent;
+    bar.style.width = width;
+});
