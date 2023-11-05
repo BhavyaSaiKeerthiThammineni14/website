@@ -12,10 +12,10 @@
 }
 
 :root {
-  --main-color: #033a80;
-  --bg-color: #fff;
-  --text-color: #0f0c27;
-  --hover: hsl(260, 100%, 51%);
+  --main-color: #69960f;
+  --bg-color: #363536;
+  --text-color: rgb(60, 233, 91);
+  --hover: hsl(195, 69%, 47%);
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
@@ -29,8 +29,8 @@ section {
 }
 
 body.active {
-  --text-color: #fff;
-  --bg-color: #0f0c27;
+  --text-color: #69960f;
+  --bg-color: rgb(187, 223, 40);
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .heading span {
@@ -68,11 +68,11 @@ header {
   background: var(--bg-color);
   padding: 13px 10%;
   transition: 0.2s;
-  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 7px #ffffffa7, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
 header.shadow {
-  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+  box-shadow: 0 0 4px rgba(14, 55, 20, 0.15);
 }
 
 .logo {
@@ -108,12 +108,6 @@ header.shadow {
   z-index: 10001;
   display: none;
 }
-
-#darkmode {
-  font-size: 22px;
-  cursor: pointer;
-}
-
 .home {
   position: relative;
   width: 100%;
@@ -123,35 +117,30 @@ header.shadow {
   align-items: center;
   gap: 1rem;
 }
-
-
 .home-img img {
-  margin-bottom:100px; 
-  
-  
+  border-radius: 25px;
+    width: 260px;
+    height: 300px;
 }
-
 .home-text span {
   font-size: var(--medium-font);
   font-weight: 500;
   font-family: "Righteous", cursive;
 }
-
 .home-text h1 {
   font-size: var(--big-font);
-  font-family: "Chivo Mono", monospace;
+  font-family: "Alex Brush",cursive;
 }
-
 .home-text h2 {
   font-size: 1.1rem;
   font-weight: 400;
 }
-
 .home-text p {
-  font-size: var(--p-font);
+  font-size: 1.0rem;
   font-weight: 400;
-  margin: 0.7rem 0 1rem;
-  font-family: "Caramel", cursive;
+  margin: 0.9rem 0 1rem;
+  color : rgb(244, 243, 235);
+  font-family: "Georgia", Serif;
 }
 
 .social {
@@ -166,7 +155,7 @@ header.shadow {
 }
 
 .social a:hover {
-  color: hsl(260, 100%, 51%);
+  color: hsl(195, 65%, 41%);
 }
 
 .btn {
@@ -182,16 +171,15 @@ header.shadow {
 }
 
 
-
 .about-img img {
-  display: center;
+  display: Left;
   size: 100%;
 }
 
 .about-text p {
   font-size: var(--p-font);
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   font-family: "Caramel", cursive;
 }
 
@@ -362,7 +350,7 @@ textarea {
   width: 100%;
   border: none;
   outline: none;
-  background: hsla(260, 100%, 44%, 0.1);
+  background: hsla(125, 82%, 39%, 0.77);
   margin-bottom: 1rem;
   color: var(--text-color);
 }
@@ -380,7 +368,7 @@ form textarea {
 .contact-button {
   width: 160px;
   cursor: pointer;
-  background: #2768d9;
+  background: rgb(104, 217, 39);
   color: #fff;
   justify-content: center;
   text-transform: uppercase;
@@ -406,7 +394,7 @@ form textarea {
 }
 
 .footer-social a i {
-  color: rgb(10, 26, 208);
+  color: rgb(17, 208, 10);
   font-size: 25px;
   margin-left: 10px;
   text-align: center;
