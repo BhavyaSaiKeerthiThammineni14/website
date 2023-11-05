@@ -201,69 +201,32 @@ header.shadow {
   font-weight: 400;
   margin-left: 1rem;
 }
-
-
-.skills-img img {
-  width: 50%;
-  padding-left: 4rem;
-  object-position: center;
+.skills-section {
+  text-align: center;
+  margin: 50px 0;
 }
 
-.bars-box {
-  position: relative;
+.skill-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  margin-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.bars-box h3,
-span {
-  font-size: 1.1rem;
-  font-weight: 500;
+.skill-column {
+  flex: 0 0 30%;
+  margin: 10px;
 }
 
-.light-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.5rem;
-  background: hsla(260, 100%, 44%, 0.4);
-  border-radius: 0.5rem;
+.skill-column h3 {
+  margin-bottom: 10px;
 }
 
-.percent-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0.5rem;
-  background: var(--main-color);
-  border-radius: 0.5rem;
+.skill-column img {
+  width: 100px;
+  height: 100px;
+ 
+  
 }
-
-.c-bar {
-  width: 80%;
-}
-.python-bar {
-  width: 90%;
-}
-.html-bar {
-  width: 90%;
-}
-.css-bar {
-  width: 80%;
-}
-
-.js-bar {
-  width: 70%;
-}
-
-.java-bar {
-  width: 90%;
-}
-
 .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
