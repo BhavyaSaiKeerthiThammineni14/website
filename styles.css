@@ -216,55 +216,44 @@ header.shadow {
   font-weight: 400;
   margin-left: 1rem;
 }
-
 .card {
   width: 140px;
-  height: 190px;
-  background-color: #fff; 
+  height: 180px;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
   perspective: 1000px;
   margin: 20px;
+  transition: transform 0.8s; /* Added transition property */
 }
 
-.card-content h3 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-top: 10px;
-  color: #000; /* changed to black */
-}
-
-.back-content {
-  transform: rotateY(180deg);
-  text-align: center;
-  color: #000; /* changed to black */
-  background-color: #fff; 
-}
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
 .card-content {
   padding: 15px;
+  transition: transform 0.8s; /* Added transition property */
 }
+
 .card:hover .card-content {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Updated to rotate entire card on hover */
 }
 
 .skills-section {
   text-align: center;
   margin: 50px 0;
 }
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
 .skills-section h2 {
   text-align: left;
-  padding-left: 80px;
+  padding-left: 80px; 
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 }
 
 .skill-row {
@@ -402,6 +391,55 @@ form textarea {
 
 .contact-button:hover {
   background: var(--hover);
+}
+.projects h1 {
+  margin: 80px;
+  font-size: 2.0rem;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+ 
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #f4efef;
+}
+
+.project-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #c0c8d0;
+  background-color: #0f9696;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #568c0a;
 }
 
 .footer {
