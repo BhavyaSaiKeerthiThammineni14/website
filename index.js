@@ -38,3 +38,12 @@ bars.forEach(bar => {
     const width = bar.parentNode.querySelector('span').textContent;
     bar.style.width = width;
 });
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        card.querySelector('.front-content').style.display = 'none';
+        card.querySelector('.back-content').style.display = 'block';
+    });
+});
+
