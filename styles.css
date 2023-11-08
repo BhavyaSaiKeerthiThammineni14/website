@@ -220,6 +220,7 @@ header.shadow {
 .card {
   width: 200px;
   height: 250px;
+  --bg-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -262,6 +263,8 @@ header.shadow {
 
 .back-content {
   transform: rotateY(180deg);
+  text-align: center;
+  text color : #000;
 }
 .skills-section {
   text-align: center;
