@@ -220,7 +220,7 @@ header.shadow {
 .card {
   width: 200px;
   height: 250px;
-  background-color: #fff; /* changed to white */
+  background-color: #fff; 
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -241,6 +241,7 @@ header.shadow {
   transform: rotateY(180deg);
   text-align: center;
   color: #000; /* changed to black */
+  background-color: #fff; 
 }
 .card img {
   width: 100%;
