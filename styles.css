@@ -251,6 +251,7 @@ header.shadow {
 }
 
 .skills-section h2 {
+  font-size: 2.0rem;
   text-align: left;
   padding-left: 80px; 
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -425,6 +426,10 @@ form textarea {
   display: flex;
   justify-content: space-between;
 }
+.project-buttons h3{
+  
+  color: #fff;
+}
 
 .button {
   display: inline-block;
@@ -433,8 +438,8 @@ form textarea {
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.9rem;
-  color: #c0c8d0;
-  background-color: #0f9696;
+  color: #020b0f;
+  background-color: #6EB5FF;
   transition: background-color 0.3s;
 }
 
@@ -450,9 +455,9 @@ form textarea {
 }
 
 .footer h2 {
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   margin-bottom: 1.6rem;
-  color: var(--text-color);
+  color: #fff;
 }
 
 .footer-social a i {
@@ -465,13 +470,6 @@ form textarea {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
-
-.copyright {
-  padding: 20px;
-  background: var(--main-color);
-  text-align: center;
-  color: #fff;
 }
 
 .copyright a {
