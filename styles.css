@@ -219,7 +219,7 @@ header.shadow {
 
 .card {
   width: 140px;
-  height: 180px;
+  height: 190px;
   background-color: #fff; 
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -262,7 +262,9 @@ header.shadow {
 }
 .skills-section h2 {
   text-align: left;
-  padding-left: 80px; 
+  padding-left: 80px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 }
 
 .skill-row {
