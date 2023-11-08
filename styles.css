@@ -220,7 +220,7 @@ header.shadow {
 .card {
   width: 200px;
   height: 250px;
-  --bg-color: #fff;
+  background-color: #fff; /* changed to white */
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -229,43 +229,32 @@ header.shadow {
   margin: 20px;
 }
 
+.card-content h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+  color: #000; /* changed to black */
+}
+
+.back-content {
+  transform: rotateY(180deg);
+  text-align: center;
+  color: #000; /* changed to black */
+}
 .card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
-
 .card-content {
   padding: 15px;
 }
-
-.card-content h3 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-top: 10px;
-  color: #333;
-}
-
 .card:hover .card-content {
   transform: rotateY(180deg);
 }
 
-.card-content {
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.back-content {
-  transform: rotateY(180deg);
-  text-align: center;
-  text color : #000;
-}
 .skills-section {
   text-align: center;
   margin: 50px 0;
