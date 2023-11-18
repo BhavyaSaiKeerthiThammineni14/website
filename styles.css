@@ -238,7 +238,7 @@ header.shadow {
   transform: rotateY(180deg); /* Updated to rotate entire card on hover */
 }
 
-.skills-section {
+.Skills{
   text-align: center;
   margin: 50px 0;
 }
@@ -250,7 +250,7 @@ header.shadow {
   border-bottom: 1px solid #ddd;
 }
 
-.skills-section h2 {
+.Skills h2 {
   font-size: 2.0rem;
   text-align: left;
   padding-left: 80px; 
