@@ -393,6 +393,10 @@ form textarea {
 .contact-button:hover {
   background: var(--hover);
 }
+.roles h1 {
+  margin: 80px;
+  font-size: 2.0rem;
+}
 .projects h1 {
   margin: 80px;
   font-size: 2.0rem;
