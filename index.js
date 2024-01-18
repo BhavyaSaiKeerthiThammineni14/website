@@ -46,4 +46,32 @@ cards.forEach(card => {
         card.querySelector('.back-content').style.display = 'block';
     });
 });
+// Add this at the end of your existing JavaScript code
 
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle the scroll animation for project cards
+function handleProjectAnimation() {
+  const projectCards = document.querySelectorAll('.project');
+  
+  projectCards.forEach((card) => {
+      if (isInViewport(card)) {
+          card.classList.add('animate');
+      }
+  });
+}
+
+// Event listener for scroll events
+window.addEventListener('scroll', handleProjectAnimation);
+
+// Initial check on page load
+handleProjectAnimation();
